@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Portfolio</title>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav>
+        <div class="left">
+            <a href="/">Bhumi Aqiel Magrabhi</a>
+        </div>
+
+        <div class="right">
+            <a href="https://github.com/Bhumm579" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-github"></i>
+                <span>Github</span>
+            </a>
+
+             <a href="https://wa.me/6282147564654" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-square-whatsapp"></i>
+                <span>whatsapp</span>
+            </a>
+
+            <a href="mailto:bhumiaqiel1@gmail.com">
+                <i class="fa-solid fa-envelope"></i>
+                <span>Email</span>
+            </a>
+        </div>
+    </nav>
+
+    <main>
+        <!-- SECTION 1: Hero -->
+         <section class="hero-section">
+            <div class="text">
+                <h2>Hi, I'm Bhumi</h2>
+                <p>I am a graduate of SMP Negeri 1 Taliwang. I started my journey in the world of programming just a year ago, and this website is one of my projects.</p>
+
+                <div class="links">
+                    <a href="#skills">
+                        <i class="fa-solid fa-code"></i>
+                        <span>Skills</span>
+                    </a>
+
+                    <a href="#achievement">
+                        <i class="fa-solid fa-trophy"></i>
+                        <span>Achievement</span>
+                    </a>
+
+                    <a href="#contact">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>Contact</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="headshot">
+                <img src="assets/foto.webp" alt="bhumi aqiel magrabhi headshot">
+            </div>
+        </section>
+
+        <!-- SECTION 2: SKills -->
+         <section id="skills" class="skills-section">
+            <h2>Skills</h2>
+            <div class="text">
+                During my time at school, I have developed several skills.
+            </div>
+
+            <div class="cells">
+                <div class="cell">
+                    <img src="assets/math.webp" alt="math logo">
+                    <span>MATH</span>
+                </div>
+
+                <div class="cell">
+                    <img src="assets/speaker.webp" alt="speaker logo">
+                    <span>PUBLIC SPEAKING</span>
+                </div>
+
+                <div class="cell">
+                    <img src="assets/writing.webp" alt="writing logo">
+                    <span>WRITING A STORY</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 3: Achievement -->
+         <section id="achievement" class="achievement-section">
+            <h2>Achievement</h2>
+            <div class="text">
+                I have achieved several remarkable accomplishment during my time in junior high school.
+            </div>
+
+            <div class="group">
+                <div class="achievement-details">
+                    <img src="assets/CERPEN_1.webp" alt="cerpen1">
+                    <h3>1st in Story Writing</h3>
+                </div>
+
+                <div class="achievement-details">
+                    <img src="assets/OPSI_1.webp" alt="opsi1">
+                    <h3>1st in OPSI </h3>
+                </div>
+
+                <div class="achievement-details">
+                    <img src="assets/AMMAN_3.webp" alt="amman3">
+                    <h3>3rd in STEM</h3>
+                </div>
+            </div>
+         </section>
+
+        <!-- SECTION 4: Contact -->
+         <section id="contact" class="contact-section">
+            <h2>Contact</h2>
+
+            <div class="group">
+                <div class="text">
+                    Don't hesitate to contact me via the form or trough my social media.
+                </div>
+
+                <form>
+                    <label for="name">Name</label>
+                    <input type="text" id="name">
+                    
+                    <label for="email">Email</label>
+                    <input type="email" id="email">
+
+                    <label for="message">Message</label>
+                    <textarea id="message" cols="30" rows="10"></textarea>
+
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+         </section>
+    </main>
+</body>
+</html>
