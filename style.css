@@ -1,7 +1,7 @@
  :root {
         --text-color: #1a1c20;
         --link-color: #4a76ee;
-        --bacground-color: #eeeff1;
+        --background-color: #eeeff1;
     }
 
 * {
@@ -16,7 +16,7 @@ html {
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: var(--bacground-color);
+    background-color: var(--background-color);
     max-width: 1400px;
     margin: 0 auto;
 }
@@ -42,27 +42,54 @@ nav .left a {
     font-weight: 600;
 }
 
-nav .right a {
+nav .right {
+    display: flex;
+}
+
+nav .right .menu a {
     color: var(--text-color);
     margin: 0 10px;
 }
 
-nav .right a:last-child {
-    color: var(--bacground-color);
+nav .right .email a {
+    color: var(--text-color);
+    margin: 0 10px;
+}
+
+nav .right .menu a:first-child{
+    color: var(--text-color);
+    background-color: var(--background-color);
+    padding: 5px 15px;
+    border-radius: 5px;  
+}
+
+nav .right .email a:last-child {
+    color: var(--background-color);
     background-color: var(--text-color);
     padding: 5px 15px;
     border-radius: 5px;  
 }
 
-nav .right a span {
+nav .right .menu a span {
     margin: 5px;
 }
 
-nav .right a:hover {
-    color: var(--bacground-color);
+nav .right .email a span {
+    margin: 5px;
+}
+
+nav .right .menu a:hover {
+    color: var(--background-color);
     background-color: var(--link-color);
     border-radius: 5px;
-    transition: 0.3s;
+    transition: .3s;
+}
+
+nav .right .email a:hover {
+    color: var(--background-color);
+    background-color: var(--link-color);
+    border-radius: 5px;
+    transition: .3s;
 }
 
 /* SECTION 1: Hero */
@@ -166,7 +193,7 @@ nav .right a:hover {
 }
 
 .skills-section .cells .cell span {
-    font-size: 20px;
+    font-size: 10px;
 }
 
 /* SECTION 3: Achievement */
@@ -190,15 +217,22 @@ nav .right a:hover {
 
 .achievement-section .group .achievement-details img {
     padding: 0 10px;
-    width: 450px;
+    max-width: 450px;
     height: auto;
     margin-bottom: 20px;
+    aspect-ratio: 16/9;
+    object-fit: fill;
 }
 
-.achievement-section .group .achievement-details h3 {
+.achievement-section .group .achievement-details .intro h3 {
     font-size: 25px;
     display: flex;
     align-items: center;
+}
+
+.achievement-section .group .achievement-details .intro p {
+    margin-bottom: 25px;
+    font-size: 16px;
 }
 
 /* SECTION 4: Contact */
@@ -253,6 +287,23 @@ nav .right a:hover {
     filter: brightness(.9);
 }
 
+/* SOCIAL MEDIA */
+.sosmed-section {
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.sosmed-section h2{
+    font-size: 30px;
+}
+
+.sosmed-section a{
+    color: var(--text-color);
+}
+
 @media (max-width: 850px) {
     /* SECTION 1: Hero */
     .hero-section .text h2 {
@@ -282,7 +333,7 @@ nav .right a:hover {
     }
 }
 
-@media (max-width: 728px) {
+@media (max-width: 784px) {
     /* NAVBAR */
     nav {
         padding: 0 20px;
@@ -292,13 +343,29 @@ nav .right a:hover {
         font-size: 22px;
     }
 
-     nav .right a:last-child {
+     nav .right .menu a:first-child{
+        color: var(--text-color);
+        background-color: transparent;
+        padding: 0;
+    }
+
+    nav .right .menu a:first-child{
         color: var(--text-color);
         background-color: transparent;
         padding: 0;
     }
     
-    nav .right a span {
+    nav .right .email a:last-child {
+        color: var(--text-color);
+        background-color: transparent;
+        padding: 0;
+    }
+    
+    nav .right .menu a span {
+        display: none;
+    }
+    
+    nav .right .email a span {
         display: none;
     }
 
@@ -328,5 +395,10 @@ nav .right a:hover {
     /* SECTION 4: Contact */
     .contact-section {
         padding: 0 20px ;
+    }
+
+    /* SOCIAL MEDIA */
+    .sosmed-section h2{
+        font-size: 30px;
     }
 }
