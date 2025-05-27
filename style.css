@@ -1,4 +1,4 @@
- :root {
+:root {
         --text-color: #1a1c20;
         --link-color: #4a76ee;
         --background-color: #eeeff1;
@@ -8,7 +8,7 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-    }
+        }
 
 html {
     scroll-behavior: smooth;
@@ -160,6 +160,12 @@ nav .right .email a:hover {
     margin-bottom: 20px;
 }
 
+.skills-section .text2 {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
 .skills-section .cells {
     display: flex;
     justify-content: center;
@@ -294,6 +300,7 @@ nav .right .email a:hover {
     align-items: center;
     justify-content: center;
     gap: 10px;
+    margin-bottom: 100px;
 }
 
 .sosmed-section h2{
