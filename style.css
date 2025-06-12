@@ -32,7 +32,7 @@ nav {
     justify-content: space-between;
     align-items: center;
 
-    padding: 0 50px;
+    padding: 0;
     height: 80px;
 }
 
@@ -180,9 +180,10 @@ nav .right .email a:hover {
 
     width: 200px;
     padding: 10px 20px;
-    margin: 10px;
+    margin: 10px auto;
     border: 1.5px solid var(--link-color);
     border-radius: 5px;
+    text-align: center;
 }
 
 .skills-section .cells .cell:hover {
@@ -218,13 +219,22 @@ nav .right .email a:hover {
 
 .achievement-section .group {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     padding: 10px;
 }
 
+.achievement-section .group .achievement-details {
+    max-width: 300px;
+    text-align: center;
+}
+
 .achievement-section .group .achievement-details img {
+    width: 100%;
     padding: 0 10px;
-    max-width: 450px;
+    max-width: 400px;
     height: auto;
+    border-radius: auto;
     margin-bottom: 20px;
     aspect-ratio: 16/9;
     object-fit: fill;
