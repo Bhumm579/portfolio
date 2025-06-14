@@ -92,8 +92,8 @@ nav .right .email a:hover {
     transition: .3s;
 }
 
-/* SECTION 1: Hero */
-.hero-section {
+/* SECTION 1: Saya */
+.saya-section {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -103,19 +103,19 @@ nav .right .email a:hover {
     gap: 40px;
 }
 
-.hero-section .text {
+.saya-section .text {
     flex: 5;
 }
 
-.hero-section .text h2 {
+.saya-section .text h2 {
     font-size: 45px;
 }
 
-.hero-section .text .links {
+.saya-section .text .links {
     margin-top: 25px;
 }
 
-.hero-section .text .links a {
+.saya-section .text .links a {
     display: inline-block;
     padding: 5px 10px;
     border: 2px solid var(--link-color);
@@ -125,18 +125,18 @@ nav .right .email a:hover {
     transition: .1s;
 }
 
-.hero-section .text .links a:hover {
+.saya-section .text .links a:hover {
     color: var(--text-color);
     border: 2px solid var(--text-color);
 }
 
-.hero-section .headshot {
+.saya-section .headshot {
     flex: 2;
     display: flex;
     justify-content: right;
 }
 
-.hero-section .headshot img {
+.saya-section .headshot img {
     aspect-ratio: 1/1;
     object-fit: cover;
     width: 350px;
@@ -322,19 +322,19 @@ nav .right .email a:hover {
 }
 
 @media (max-width: 850px) {
-    /* SECTION 1: Hero */
-    .hero-section .text h2 {
+    /* SECTION 1: Saya */
+    .saya-section .text h2 {
         font-size: 35px;
     }
 }
 
 @media (max-width: 740px) {
-    /* SECTION 1: Hero */
-    .hero-section {
+    /* SECTION 1: Saya */
+    .saya-section {
         flex-direction: column-reverse;
     }
 
-    .hero-section .headshot img {
+    .saya-section .headshot img {
         width: 300px;
     }
 
@@ -386,12 +386,12 @@ nav .right .email a:hover {
         display: none;
     }
 
-    /* SECTION 1: Hero */
-    .hero-section {
+    /* SECTION 1: saya */
+    .saya-section {
         padding: 0 20px;
     }
 
-    .hero-section .text h2 {
+    .saya-section .text h2 {
         font-size: 30px;
     }
 
@@ -417,5 +417,15 @@ nav .right .email a:hover {
     /* SOCIAL MEDIA */
     .sosmed-section h2{
         font-size: 30px;
+    }
+
+    @media (max-width: 376px) {
+        .sosmed-section h2 {
+            font-size: 20px;
+        }
+
+        .sosmed-section .sosmed a {
+            font-size: 40px;
+        }
     }
 }
