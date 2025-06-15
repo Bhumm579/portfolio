@@ -40,6 +40,8 @@ nav .left a {
     color: var(--text-color);
     font-size: 22px;
     font-weight: 600;
+    background-color: var(--link-color);
+    border-radius: 5px;
 }
 
 nav .right {
@@ -51,41 +53,19 @@ nav .right .menu a {
     margin: 0 10px;
 }
 
-nav .right .email a {
-    color: var(--text-color);
-    margin: 0 10px;
-}
-
-nav .right .menu a:first-child{
+nav .right .menu a {
     color: var(--text-color);
     background-color: var(--background-color);
     padding: 5px 15px;
-    border-radius: 5px;  
-}
-
-nav .right .email a:last-child {
-    color: var(--background-color);
-    background-color: var(--text-color);
-    padding: 5px 15px;
-    border-radius: 5px;  
+    border-radius: 5px;
+    font-size: 13px;  
 }
 
 nav .right .menu a span {
     margin: 5px;
 }
 
-nav .right .email a span {
-    margin: 5px;
-}
-
 nav .right .menu a:hover {
-    color: var(--background-color);
-    background-color: var(--link-color);
-    border-radius: 5px;
-    transition: .3s;
-}
-
-nav .right .email a:hover {
     color: var(--background-color);
     background-color: var(--link-color);
     border-radius: 5px;
@@ -109,6 +89,13 @@ nav .right .email a:hover {
 
 .saya-section .text h2 {
     font-size: 45px;
+}
+
+.saya-section .text a {
+    font-size: 45px;
+    color: black;
+    background-color: var(--link-color);
+    border-radius: 5px;
 }
 
 .saya-section .text .links {
@@ -187,8 +174,7 @@ nav .right .email a:hover {
 }
 
 .skills-section .cells .cell:hover {
-    color: var(--text-color);
-    border: 2px solid var(--text-color);
+    border-color: black;
 }
 
 .skills-section .cells .cell img {
@@ -360,19 +346,7 @@ nav .right .email a:hover {
         font-size: 22px;
     }
 
-     nav .right .menu a:first-child{
-        color: var(--text-color);
-        background-color: transparent;
-        padding: 0;
-    }
-
-    nav .right .menu a:first-child{
-        color: var(--text-color);
-        background-color: transparent;
-        padding: 0;
-    }
-    
-    nav .right .email a:last-child {
+    nav .right .menu a {
         color: var(--text-color);
         background-color: transparent;
         padding: 0;
